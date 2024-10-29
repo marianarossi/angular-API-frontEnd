@@ -28,5 +28,12 @@ export class ProductService {
     return this.http.post<Response<ListProducts[]>>(this.ApiUrl, product);
   }
 
+  GetProductId(id:number):Observable<Response<ListProducts>>{
+    return this.http.get<Response<ListProducts>>(`${this.ApiUrl}/${id}`)
+  }
+
+  EditProduct(product:ListProducts):Observable<Response<ListProducts[]>>{
+    return this.http.put<Response<ListProducts[]>>(this.ApiUrl, product);
+  }
 
 }

@@ -28,8 +28,7 @@
                         <td>R${{ product.price }}</td>
                         <td>{{ product.dateCreated | date:'yyyy-MM-dd HH:mm:ss':'America/Sao_Paulo' }}</td>
                         <td>
-                            <button class = "btn btn-warning mx-2" [routerLink]="['/edit', product.id]" >Edit</button>
-                            <button class = "btn btn-info mx-2">Details</button>
+                            <button class = "btn btn-info mx-2" [routerLink]="['/edit', product.id]" >Edit</button>
                             <button class = "btn btn-danger mx-2" (click) = "delete(product.id)">Delete</button>
                         </td>
                     </tr>

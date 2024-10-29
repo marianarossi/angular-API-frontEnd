@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
+  btnAction = "Register";
+  formTitle = "Register a product";
 
   constructor(private productService : ProductService, private router: Router){ }
   
